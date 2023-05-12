@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Doctor</title>
+</head>
+<body>
+<a href="/doctors"> Back </a>
+<form action="/doctors/add" method="post" enctype="multipart/form-data">
+    Name:
+    <input type="text" name="name"> <br><br>
+    Surname:
+    <input type="text" name="surname"> <br><br>
+    Email:
+    <input type="email" name="email"> <br><br>
+    Specialty:
+    <input type="text" name="specialty"> <br><br>
+    Phone number:
+    <input type="text" name="phoneNumber"> <br><br>
+    Profile picture:
+    <input type="file" name="image">
+    <br><br>
+    <input type="submit" value="add">
+</form>
+</body>
+</html>
