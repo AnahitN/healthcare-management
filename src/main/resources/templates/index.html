@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Main Page</title>
 </head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
 <body>
+<div th:if="${user!= null}">Welcome <b th:text="${user.name}"></b> <br>
+<a href="/logout">Log out</a>
+</div>
 <a href="/doctors">Doctors' Page </a><br><br>
 <a href="/patients">Patients' Page</a><br><br>
 <a href="/appointments">Appointments</a><br><br>
+<a href="/user/register" th:if="${user==null}">Register</a>
+<a href="/user/login" th:if="${user==null}">Log in</a>
 </body>
 </html>
